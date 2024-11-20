@@ -2,6 +2,15 @@ provider "aws" {
   region = "eu-central-1"
 }
 
+
+terraform {
+  backend "s3" {
+    bucket = "git-codebuild-terraform"
+    key = "terraform.tfstate"
+    region = "eu-central-1"
+  }
+}
+
 # VPC Module
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
