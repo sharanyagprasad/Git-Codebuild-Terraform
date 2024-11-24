@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: 3.x
+      python: 3.x  #not necessary just to show that any library can be installed
 
   pre_build:
     commands:

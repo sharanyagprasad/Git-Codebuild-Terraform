@@ -18,7 +18,7 @@ module "vpc" {
 
   name               = "Sharanya-VPC"
   cidr               = "10.0.0.0/18"
-   azs                = ["eu-central-1a"]
+  azs                = ["eu-central-1a"]
   public_subnets     = ["10.0.1.0/24"]
   private_subnets    = ["10.0.2.0/24"]
 
